@@ -1,0 +1,350 @@
+* {
+	box-sizing: border-box;
+}
+
+$rose:deeppink;
+
+@keyframes down {
+	0% {
+		transform:translateY(1em);
+	}
+	
+	100% {
+		transform:translateY(0);
+	}
+}
+
+
+@keyframes jump {
+	0% {
+		transform:translateY(0);
+
+	}
+	33%{
+		transform:translateY(-1em);
+		width:10%;
+		height:auto;
+		
+		
+	}
+	66% {
+		transform:translateY(1em);
+		width:25%;
+		height:auto;
+	}
+	100% {
+		transform:translateY(0);
+
+	}
+}
+
+
+
+
+
+
+.container {
+	max-width: 900px;
+	margin :0 auto;
+}
+
+
+body {
+	background-image: url('img/fond.png');
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo img {
+	width:50px;
+	height: auto;
+	vertical-align: middle;
+}
+
+.header .logo a:hover {
+	transform:scale(1.5);
+	color:red;
+}
+
+
+
+.header .logo {
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	width:50%;
+}
+
+.header .nav {
+	width:50%;
+}
+
+.header nav {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	vertical-align: top;
+	text-align: center;
+}
+
+.header a{
+	color:grey;
+	text-decoration: none;
+}
+
+.header nav a:hover {
+	animation:down 1s;
+	color:$rose;
+}
+
+
+.header {
+	.fas{
+		display: block;
+	}
+}
+
+h1::before {
+	content:'-';
+}
+
+h1::after {
+	content:'-';
+}
+
+
+h2::before {
+	content:'-';
+}
+h2::after {
+	content:'-';
+}
+
+
+
+
+
+
+
+
+.main .sect1 {
+	background-image: url('img/bg_header.png');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	filter:contrast(130%) brightness(1);
+	opacity:100;
+
+	
+
+	h1 {
+		
+		padding: 3em 2em 2em 2em;
+		color:white;
+	}
+
+	p{
+		text-align: center;
+		padding:1em 2em 2em 2em;
+		color:white;
+	}
+
+	a {
+		display:inline-block;
+		text-align: center;
+		background-color: $rose;
+		margin:1em 2em 5em 2em;
+		padding:0.5em 1em 0.5em 1em;
+		color:white;
+		text-decoration: none;
+		border-radius: 5px;
+	}
+	
+}
+
+.main .sect2{
+	
+	h1 {
+		text-align: center;
+		color:$rose;
+		margin:2em 0 2em 0;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 2em;
+		
+		li {
+			text-align:center;
+			list-style-type: none;
+			p {
+				color:dimgrey;
+			}
+			h2 {
+				color:dimgrey;
+			}
+		}
+	}
+
+}
+
+.main .sect3 {
+
+	h1 {
+		text-align: center;
+		color:$rose;
+		margin:2em 0 2em 0;
+	}
+	h3{
+		color:$rose;
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 2em;
+		
+		li {
+			text-align:center;
+			list-style-type: none;
+			p {
+				color:dimgrey;
+				line-height: 1.5;
+			}
+			h2 {
+				color:dimgrey;
+			}
+			.fas {
+				color:dimgrey;
+				background-color: gainsboro;
+				padding:0.5em 0.5em 0.5em 0.5em;
+				border-radius: 50%;
+				width:2em;
+				height:auto;
+			}
+			/*.fas::before {
+				content:"";
+				position: absolute;
+				border-radius:50%;
+				width:1em;
+			}
+
+			.fas::after {
+				content:"";
+				position: absolute;
+				border-radius:50%;
+				width:3em;
+			}*/
+
+			.fas:hover {
+				animation:jump 2s infinite ;
+				
+			}
+		}
+	}
+}
+
+
+.main .sect4 {
+	
+	h1 {
+		text-align: center;
+		color:$rose;
+		margin:2em 0 2em 0;
+	}
+
+	h2{
+		color:$rose;
+		margin:2em 0 2em 0;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+
+	a {
+		color:deeppink;
+		text-decoration: none;
+	}
+
+	img{
+		width:40%;
+		height:auto;
+	}
+	article:nth-child(odd) img{
+		float: left;
+	}
+	article:nth-child(even) img{
+		float: right;
+	}
+}
+
+
+.main .sect5 {
+	h1 {
+		text-align: center;
+		color:$rose;
+		margin:2em 0 2em 0;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+
+	input {
+		background-image: url('img/bg_form_name.svg');
+		background-repeat: no-repeat;
+		padding:0.5em 0 0.5em 3em;
+
+		border-radius: 10px; 
+	}
+
+	input:nth-child(1),
+	input:nth-child(2) {
+		width: 50%;
+	}
+	input:nth-child(3) {
+		width:100%;
+	}
+	form {
+		text-align: center;
+	}
+
+	button:first-of-type{
+		background-color: deeppink;
+		margin-top: 2em;
+	}
+	button:last-of-type{
+		background-color: grey;
+		margin-top: 2em;
+	}
+
+}
+
+
+
+
+
+
+
+.footer {
+	margin-top: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	p {
+	color:black;
+	text-align: center;
+	font-size: 0.7em;
+	}
+	img {
+	width:40px;
+	}
+	span {
+	text-decoration: underline;
+	}
+}

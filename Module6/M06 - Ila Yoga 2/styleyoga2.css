@@ -1,0 +1,75 @@
+.header {
+	background-image: url("img/fond.jpg");
+	background-size: cover;
+	background-position: center center;
+	
+	margin:0 auto 0 auto;
+}	
+
+.header h1,
+.header div,
+.header nav,
+.header a{	
+	color:white;
+	text-align: center;
+	font-family:'Kaushan Script', cursive;
+	
+}
+
+
+
+.header nav {
+	background-color: rgba(255,255,255,0.3);
+	
+	font-size:1.5em;
+}
+
+.header div {
+	background-color: rgba(255,255,255,0.1)
+}
+
+.header h1 {
+	padding:1em 0 2em 0;
+	font-size: 2em;
+}
+
+.header i{
+	display:block;
+}
+.header p {
+
+	display:inline-block;
+}
+
+.header a:link {
+	text-decoration: none
+}
+
+.header a:hover {
+	text-decoration: underline
+}
+
+.header a {
+	width:25%;
+	margin:1em;
+}
+/****************************/
+/*footer*/
+/****************************/
+
+.footer {
+	background-image: url('img/background_section.jpg')
+}
+.footer p {
+	color:white;
+	text-align: center;
+}
+
+.footer img {
+	width:40px;
+}
+
+.footer {
+	margin-top: 0;
+	padding-top: 1em;
+}

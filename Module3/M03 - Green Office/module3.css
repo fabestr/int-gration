@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "Oswald";
+	src:url("fonts/Oswald-Regular.ttf");
+}
+body {
+	background-image: url("img/fond.png")
+}
+header {
+	background-color:#b9c939;
+	width:70%;
+	max-width: 750px;
+	margin:0 auto 0 auto;
+	padding:1em 1em 1em 1em;
+	text-align:right;
+}
+.logo {
+	float:left;
+}
+
+
+.nav {
+	display:inline-block;
+	color:darkolivegreen;
+	margin-right: 1em;
+	font-size:1.3em;
+	line-height: 130px;
+	font-family:"Oswald";
+
+}
+.main{
+	background-color:white;
+	width:70%;
+	max-width: 750px;
+	margin:0 auto 0 auto;
+	padding:1em 1em 4em 1em;
+}
+.imgtxt img {
+	width:200px;
+	height:auto;
+	float:left;
+	margin-right:10px;
+}
+.read a {
+	color:white;
+	float:right;
+	background-color:#b9c939;
+	margin:0 20px 0 20px;
+	padding:10px 10px 10px 10px;
+	text-decoration: none;
+	font-family:"Oswald";
+	
+	
+}
+h1 {
+	clear:both;
+	color:#b9c939;
+	font-family:"Oswald";
+}
+
+.read a:hover {
+	color:goldenrod;
+}
+
+.read a :visited {
+	color:blueviolet;
+}

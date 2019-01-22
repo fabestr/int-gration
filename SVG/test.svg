@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="600">
+    <title>Un exemple de document svg</title>
+    <desc>je test le SVG</desc>
+
+    <rect x="10" y="80" width="120" height="70" fill="green"/>
+
+    <circle cx="180" cy="115" r="50" fill="blue" stroke="red"/>
+
+    <line x1="5" y1="5" x2="85" y2="85" stroke="red"/>
+
+    <text x="200" y="200">Test SVG</text>
+
+    <path d="M 250,180 L 290,20 L 350,180" fill="#ffcc33"/>
+
+</svg>

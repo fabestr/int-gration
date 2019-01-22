@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box; }
+
+@keyframes down {
+  0% {
+    transform: translateY(1em); }
+  100% {
+    transform: translateY(0); } }
+@keyframes jump {
+  0% {
+    transform: translateY(0); }
+  33% {
+    transform: translateY(-1em);
+    width: 10%;
+    height: auto; }
+  66% {
+    transform: translateY(1em);
+    width: 25%;
+    height: auto; }
+  100% {
+    transform: translateY(0); } }
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+body {
+  background-image: url("img/fond.png"); }
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header .logo img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle; }
+
+.header .logo a:hover {
+  transform: scale(1.5);
+  color: red; }
+
+.header .logo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 50%; }
+
+.header .nav {
+  width: 50%; }
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: top;
+  text-align: center; }
+
+.header a {
+  color: grey;
+  text-decoration: none; }
+
+.header nav a:hover {
+  animation: down 1s;
+  color: deeppink; }
+
+.header .fas {
+  display: block; }
+
+h1::before {
+  content: '-'; }
+
+h1::after {
+  content: '-'; }
+
+h2::before {
+  content: '-'; }
+
+h2::after {
+  content: '-'; }
+
+.main .sect1 {
+  background-image: url("img/bg_header.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  filter: contrast(130%) brightness(1);
+  opacity: 100; }
+  .main .sect1 h1 {
+    padding: 3em 2em 2em 2em;
+    color: white; }
+  .main .sect1 p {
+    text-align: center;
+    padding: 1em 2em 2em 2em;
+    color: white; }
+  .main .sect1 a {
+    display: inline-block;
+    text-align: center;
+    background-color: deeppink;
+    margin: 1em 2em 5em 2em;
+    padding: 0.5em 1em 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; }
+
+.main .sect2 h1 {
+  text-align: center;
+  color: deeppink;
+  margin: 2em 0 2em 0; }
+.main .sect2 ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em; }
+  .main .sect2 ul li {
+    text-align: center;
+    list-style-type: none; }
+    .main .sect2 ul li p {
+      color: dimgrey; }
+    .main .sect2 ul li h2 {
+      color: dimgrey; }
+
+.main .sect3 h1 {
+  text-align: center;
+  color: deeppink;
+  margin: 2em 0 2em 0; }
+.main .sect3 h3 {
+  color: deeppink; }
+.main .sect3 ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em; }
+  .main .sect3 ul li {
+    text-align: center;
+    list-style-type: none;
+    			/*.fas::before {
+    				content:"";
+    				position: absolute;
+    				border-radius:50%;
+    				width:1em;
+    			}
+    
+    			.fas::after {
+    				content:"";
+    				position: absolute;
+    				border-radius:50%;
+    				width:3em;
+    			}*/ }
+    .main .sect3 ul li p {
+      color: dimgrey;
+      line-height: 1.5; }
+    .main .sect3 ul li h2 {
+      color: dimgrey; }
+    .main .sect3 ul li .fas {
+      color: dimgrey;
+      background-color: gainsboro;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      border-radius: 50%;
+      width: 2em;
+      height: auto; }
+    .main .sect3 ul li .fas:hover {
+      animation: jump 2s infinite; }
+
+.main .sect4 h1 {
+  text-align: center;
+  color: deeppink;
+  margin: 2em 0 2em 0; }
+.main .sect4 h2 {
+  color: deeppink;
+  margin: 2em 0 2em 0; }
+.main .sect4 p {
+  line-height: 1.5; }
+.main .sect4 a {
+  color: deeppink;
+  text-decoration: none; }
+.main .sect4 img {
+  width: 40%;
+  height: auto; }
+.main .sect4 article:nth-child(odd) img {
+  float: left; }
+.main .sect4 article:nth-child(even) img {
+  float: right; }
+
+.main .sect5 h1 {
+  text-align: center;
+  color: deeppink;
+  margin: 2em 0 2em 0; }
+.main .sect5 p {
+  line-height: 1.5; }
+.main .sect5 input {
+  background-image: url("img/bg_form_name.svg");
+  background-repeat: no-repeat;
+  padding: 0.5em 0 0.5em 3em;
+  border-radius: 10px; }
+.main .sect5 input:nth-child(1),
+.main .sect5 input:nth-child(2) {
+  width: 50%; }
+.main .sect5 input:nth-child(3) {
+  width: 100%; }
+.main .sect5 form {
+  text-align: center; }
+.main .sect5 button:first-of-type {
+  background-color: deeppink;
+  margin-top: 2em; }
+.main .sect5 button:last-of-type {
+  background-color: grey;
+  margin-top: 2em; }
+
+.footer {
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .footer p {
+    color: black;
+    text-align: center;
+    font-size: 0.7em; }
+  .footer img {
+    width: 40px; }
+  .footer span {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=portefolio.css.map */

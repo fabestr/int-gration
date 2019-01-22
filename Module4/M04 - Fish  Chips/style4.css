@@ -1,0 +1,142 @@
+@font-face {
+	font-family:"Slabo27";
+	src:url("fonts/Slabo27px-Regular.ttf");
+}
+
+@font-face {
+	font-family:"Opensans";
+	src:url("fonts/OpenSans-Regular.ttf");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image:url("img/fond.png");
+	margin:0 0 1em 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+	
+}
+header {
+	background-color: #02b2b2;
+	border-top:2px solid teal ;
+	border-bottom:2px solid teal;
+	margin:0 auto 0 auto;
+
+}
+
+h1, h2, h3, a {
+	font-family:"Slabo27";
+}
+p {
+	font-family:"Opensans";
+}
+
+#welcome {
+	font-size:2.5em;
+}
+
+.navt{
+	text-align: center;
+}
+.nav {
+	text-align:center;
+}
+
+
+main{
+	max-width: 800px;
+	margin:0 auto 0 auto;
+}
+
+.welcome {
+	text-align: center;
+	width:70%;
+	margin:0 auto;
+}
+
+section {
+	background-color: powderblue;
+	float:left;
+	width:69%;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+#today {
+	text-align: center;
+	font-size: 3.5em;
+}
+span {
+	color:#02b2b2;
+}
+
+.fas-fa-tint {
+	color:#02b2b2;
+}
+
+.recipe {
+	font-size:1.8em; 
+	text-align: center;
+}
+
+.art1 {
+	float:left;
+	width:50%;
+	padding:0 1em 0 1em;
+}
+
+.art2 {
+	float:left;
+	width:50%;
+	padding:0 1em 0 1em;
+}
+ img.imgrecette {
+ 	float:left;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+    margin-right:1em;
+ }
+
+.read {
+	text-align: right;
+}
+
+
+.read a {
+	
+	padding:5px 10px 5px 10px;
+	background-color: #02b2b2;
+	margin:0 20px 0 20px;
+
+}
+
+aside {
+	float:left;
+	width:29%;
+	background-color: #02b2b2;
+	color:white;
+	margin:0 0 0 1em;
+	padding:0 1em 0 1em;
+	border:2px solid teal;
+}
+
+#news {
+	font-size: 1.4em;
+}
+
+img.imgaside{
+	float:right;
+	margin:-2.5em -4em 0 0;
+	width:120px;
+}

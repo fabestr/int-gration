@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin:0 auto;
+}
+
+
+
+body {
+    margin-top: 0;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/******************************************************
+*****************GENERAL*******************************
+******************************************************/
+$vert:#94af30;
+
+
+.light {
+    background-color:white;
+}
+
+.navLink {
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+}
+
+.price {
+    display: block;
+    color:dimgrey;
+    font-size:24px;
+    font-weight: bold;
+}
+
+
+h1 {
+    color:$vert;
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    display:flex;
+    flex-direction: row;
+    padding-right:0.5em;
+    padding-left: 0.5em;
+    color:$vert;
+    font-size: 25px;
+}
+
+h2::before {
+    content:"";
+    flex:1 1;
+    border-bottom:2px solid #f1f1f1;
+    margin:auto 0.1em auto 0;
+}
+h2::after {
+    content:"";
+    flex:1 1;
+    border-bottom:2px solid #f1f1f1;
+    margin:auto 0 auto 0.1em;
+}
+
+h3 {
+    color:dimgrey;
+    font-size:20px;
+    text-align: left;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Amaranth', sans-serif;
+
+}
+
+.titleFooter {
+    color:white;
+    text-align:center;
+}
+
+
+/******************************************************
+*****************HEADER********************************
+******************************************************/
+
+.header {
+    background-image: url('img/bg.jpg');
+    
+
+    .pub {
+        background-color: rgba(0,0,0,0.1);
+        text-align: center;
+        
+        p {
+            margin-top: 0;
+            color:white;
+        }
+        img {
+            position: absolute;
+            top:0px;
+            right:10px;
+           
+            width:8%;
+            height:auto;
+        }
+    }
+    .flexHead {
+        display:flex;
+        flex-wrap: wrap;
+        
+
+        .logo{
+            padding-left: 1em;
+            width:50%;
+        }
+        .panier{
+            padding-right: 1em; 
+            width:50%;
+            text-align: right;
+            
+
+            a {
+               line-height: 5em;
+               color:white;
+               text-decoration: none;
+               .fas {
+                    margin-right: 0.5em;
+                    margin-left: 0.5em;
+                    border:solid 1px white;
+                    border-radius:50%;
+                    padding:0.5em 0.5em 0.5em 0.5em;
+               }
+
+               span {
+                   font-size: 24px;
+                  
+               }
+            }
+        }
+
+        nav {
+            width:100%
+        }
+        ul{
+            display:flex;
+            justify-content: space-between;
+            padding-left: 0;
+
+            li {
+                list-style-type:none;
+            }
+        }
+    }
+    
+}
+
+
+/*******************************************************
+*******************MAIN*********************************
+*******************************************************/
+
+.flex {
+    display:flex;
+    justify-content: space-between;
+
+    img {
+        width:100%;
+    }
+}
+
+.buy {
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1em;
+}
+
+.choice {
+    display:flex;
+    flex-direction: column;
+    justify-content: inherit;
+    flex:1;
+    padding-right:1em;
+}
+
+.choice,
+.stars {
+    height:50%;
+}
+
+select {
+    width:100%
+}
+
+.addPanier {
+    margin-bottom:1em;
+    padding:1em 1em 1em 1em;
+    background-color: #af8d67;
+    text-decoration: none;
+    color:white;
+}
+.light {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.bonusLink {
+    text-decoration: none;
+    color:$vert;
+    margin-top: 2em;
+}
+
+.fa-star {
+    color:yellow;
+}
+.fa-star:last-of-type {
+    color:dimgrey;
+}
+
+.fa-heart {
+    color:pink;
+}
+
+.bold {
+    font-weight: bold;
+    color:dimgrey;
+    margin-bottom: 2em;
+}
+
+.ref {
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+********************FOOTER****************************************
+*****************************************************************/
+
+footer {
+    margin-top: 2em;
+    background-image: url('img/bg.jpg');
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,0.1);
+        text-align: center;
+        padding:1em 0 1em 0;
+
+        .fas {
+        display:block;
+        padding:1em 0 1em 0;
+        }
+    }
+
+    .planSite {
+        display: flex;
+        justify-content: space-around;
+        a {
+            color:white;
+            text-decoration: none;
+        }
+        ul{
+            text-align: center;
+        }
+        li {
+            list-style-type: none;
+        }
+    }
+
+}
+
+
+/*********************************************************************
+******************MEDIA QUERIES***************************************
+*********************************************************************/
+
+/*******************MOBILE**********************************/
+
+
+@media screen and (max-width: 500px) {
+    .hidden {
+        display:none;
+    }
+
+    .header {
+
+        .flexHead {
+            display:flex;
+            flex-wrap: wrap; 
+            
+            .logo{
+                width:100%;
+                order:2;
+                text-align: center;
+            }
+            .panier{
+                width:50%;
+                text-align: left;
+                order:1;
+
+                a {
+                    box-shadow: 2px 2px 2px dimgrey;
+                    border-top-right-radius: 40%;
+                    border-bottom-right-radius:40%;
+                    padding:1em 1em 1em 0;
+                }
+               
+            }
+
+            nav {
+                order:3;
+               
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .flex {
+        flex-direction: column;
+        .stars {
+            text-align: center;
+        }
+        .choice {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+
+
+
+
+
+
+    footer {
+        nav {
+            flex-wrap: wrap;
+       
+            .navLink {
+                width:50%;
+            }
+        }
+
+        .planSite {
+            flex-direction: column;
+        }
+    }
+
+
+}

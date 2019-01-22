@@ -1,0 +1,189 @@
+$bleu:#1e4254;
+$rose:#fe8899;
+
+@for $i from 2 through 12 {
+	.grid-#{$i}{
+		display:flex;
+	}
+	.grid-#{$i}>*{
+		width:100%/$i;
+	}
+}
+
+
+
+.container {
+	max-width: 900px;
+	margin: 0 auto 0 auto;
+}
+
+
+.fas {
+	display: block;
+	text-align: center;
+}
+
+h1, a {
+	font-family: 'Candal', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header nav  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header nav .fas {
+	color:$rose;
+}
+
+.header nav a {
+	color:$bleu;
+}
+
+.header form {
+	background-color:$rose;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.header input {
+	color:white;
+	background-color:$rose;
+	border: none;
+	padding-left: 2em;
+}
+
+.main .container>h1 {
+	border:1px dashed grey;
+	border-bottom: none;
+	color:$bleu;
+	background-color: white;
+}
+
+.main article {
+	margin:1em 0.5em 1em 0.5em;
+	border:1px dashed grey;
+	height:auto;
+}
+
+.main h1 {
+	text-align: center;
+	color:white;
+	background-color: $bleu;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1em;
+	padding:1em 0 1em 0;
+}
+
+.main .prix {
+	text-align: center;
+	font-family: 'Candal', sans-serif;
+	color:grey;
+
+
+}
+
+.main .cmd{
+	display: block;
+	background-color: $rose;
+	text-align: center;
+	color:white;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding:1em 0 1em 0;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+.footer {
+	background-color: $bleu;
+}
+
+
+.footer .navfoot {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.footer a {
+	color:white;
+}
+
+.footer p {
+	color:white;
+	text-align: center;
+	font-size: 0.7em;
+}
+
+.footer img {
+	width:40px;
+}
+
+.footer {
+	margin-top: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.footer span {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+
+	.header nav  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+	.header nav a {
+		padding-bottom: 2em;
+	}
+	
+	.main .sect1,
+	.main .sect2 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	}
+
+	.main article {
+	width:auto;
+	margin-bottom: 2em;
+	padding:0 2em 0 2em;
+}
+
+	.footer .navfoot {
+	display: flex;
+	flex-direction: column;	
+	text-align: center;
+}
+	.footer .navfoot a {
+		padding-top: 2em;
+	}
+
+}

@@ -1,0 +1,84 @@
+.container {
+	max-width: 1000px;
+	margin: 0 auto 0 auto;
+	
+}
+.container h1,h2 {
+	text-align: center;
+
+}
+
+.container table {
+	border: 0.5px solid grey;
+	margin:0 auto 0 auto;
+	width:90%;
+	border-collapse: collapse;
+
+
+}
+
+body {
+	font-family: 'Playfair Display';
+	font-size: 1em;
+}
+
+
+.tableau thead {
+	background-color: #bca7d8;
+	font-family: "Kaushan Script";
+	text-align: left;
+	color:white;
+}
+
+.tableau tr:nth-child(even){
+	background-color: lightgrey;
+
+}
+.tableau td:first-child {
+	padding-left: 1em;
+}
+
+.tableau td:last-child {
+	text-align: center ;
+}
+
+.tableau a:link {
+	text-decoration: none;
+}
+
+.tableau a:hover {
+	text-decoration: underline;
+}
+
+.tableau td:nth-child(2) {
+	text-align: center;
+}
+
+.tableau td{
+	border: 0.5px solid grey;
+	padding:1em 0 1em 0;
+}
+
+.formulaire {
+	text-align: center;
+}
+
+.formulaire select {
+	width:95%;
+
+}
+
+.formulaire button {
+	background-color: #bca7d8;
+	margin-bottom: 2em;
+}
+
+.formulaire fieldset {
+	padding:2em 0 2em 0;
+	margin: 1em 0 1em 0;
+}
+
+.formulaire input {
+	border:0;
+	border-bottom: 1px solid grey;
+}

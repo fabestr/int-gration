@@ -1,0 +1,89 @@
+ * {
+    box-sizing: border-box;
+}
+
+ .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	background-color: #F5F5DC;
+}
+
+.container {
+	max-width: 900px;
+	margin:0 auto 0 auto;
+}
+/*****************************
+**********.HEADER*************
+*****************************/
+
+
+.header {
+	text-align: center;
+}
+
+.header .brand {
+ 	float:left;
+ 	width:20%;
+}
+
+.header .succes {
+	text-align: right;
+	padding-top: 1.5em;
+}
+
+
+.header a {
+	display:inline-block;
+	width:20%;
+	border-left:2px solid white;
+	border-right:2px solid white;
+	padding:1em 0 1em 0;
+	margin-bottom:0;
+}
+
+.header .backimg {
+	background-image: url("images/people.jpg");
+	background-position: center top;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	text-align: left;
+	background-color: white;
+	margin-top:0;
+}
+
+.header .backimg p{
+	padding:3em 0 2em 0;
+}
+
+.header .white {
+	background-color: white;
+
+}
+
+.header .nav {
+	margin-bottom: -1.5em;
+	background-color: #FAEBD7;
+}
+
+.header.disco {
+	font-size:2em;
+	color:brown;
+}
+
+.header .busi {
+	font-size:4em;
+	text-align: right;
+}
+
+.header .secret {
+	font-size:4em;
+	color:red;
+	padding-left:0.5em;
+}
+
+
+

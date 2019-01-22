@@ -1,0 +1,94 @@
+/*.conteneur {
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+
+}
+
+
+.conteneur a {
+	display:inline-block;
+	text-align: center;
+	position:relative;
+}
+
+.conteneur div {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+
+}
+
+.conteneur span {
+	display:none;
+	position:absolute;
+	bottom:1em;
+	left:50%;
+	width:150px;
+	margin-left:-75px;
+	font-weight: bold;
+	border: solid 1px black;
+}
+
+.conteneur a:hover span{
+	display:block;
+	color:red;
+	background-color: blue;
+
+}
+
+span::after {
+	content:"V";
+}
+
+
+
+
+/***********************************
+***************2eme maniere*********
+***********************************/
+
+
+
+a[data-tooltip]{
+	position:relative;
+	text-align: center;
+	display: block;
+}
+
+a[data-tooltip]::before {
+	content:attr(data-tooltip);
+	position: absolute;
+	display:none;
+	bottom:2em;
+	left:50%;
+	width:400px;
+	margin-left:-200px;
+	background-color: cyan;
+}
+
+a[data-tooltip]:hover::before{
+	display: block;
+}
+
+
+/********************************
+****Pour ajouter le triangle*****
+********************************/
+
+
+a[data-tooltip]::after {
+	content:"";
+	position: absolute;
+	display:none;
+	width:0;
+	height:0;
+	border:15px solid transparent;
+	border-top-color:cyan;
+	bottom:0.3em;
+	left:50%;
+	margin-left: -7.5px;
+}
+
+a[data-tooltip]:hover::after {
+	display: block;
+}

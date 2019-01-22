@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #f1f0f3;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto 0 auto;
+}
+
+h1 {
+	color: #3aa9a3;
+	text-transform: uppercase;
+	border-bottom: 2px solid #3aa9a3;
+	font-family:'PT Sans Narrow', sans-serif;
+}
+
+nav {
+	position:sticky;
+}
+
+/*************************************
+***********HEADER*******************
+*************************************/
+
+
+
+.header p {
+	text-align: center;
+}
+
+.header nav {
+	text-align: center;
+	background-color:#3aa9a3; 
+	padding:1em 0 1em 0; 
+}
+
+.header nav a {
+	display: inline-block;
+	width:30%;
+	text-decoration: none;
+	color:white;
+}
+
+
+/*************************************
+***********SECTION1*******************
+*************************************/
+
+
+.sect1 {
+	width:69%;
+	display: inline-block;
+}
+
+.sect1 img {
+	width:100%;
+	height: auto;
+}
+
+
+
+/*************************************
+***********ASIDE**********************
+*************************************/
+.aside {
+	width:30%;
+	background-color:#c3da85;
+	display:inline-block;
+	vertical-align: top;
+	padding: 1em 1em 1em 1em;
+	margin-left: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+	background-color: #f1f0f3;
+}
+.footer p {
+	color:black;
+	text-align: center;
+	font-size: 0.7em;
+}
+
+.footer img {
+	width:40px;
+}
+
+.footer {
+	margin-top: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.footer span {
+	text-decoration: underline;
+}
+
+
+
+/**************************************
+***********TABLETTE********************
+**************************************/
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+	
+	.sect1 ,.aside {
+		width:100%;
+		display: block;
+	}
+
+	.header nav a {
+	display: block;
+	width:100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+	
+
+
+}
+
+
+
+/**************************************
+************SMARTPHONE*****************
+**************************************/
+
+@media screen and (max-width: 480px) {
+	.sect1  {
+		width:100%;
+	}
+
+	.aside {
+		display:none;
+	}
+
+	.header nav a {
+	display: block;
+	width:100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	}
+}

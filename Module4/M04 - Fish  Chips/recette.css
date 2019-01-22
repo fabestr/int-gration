@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image:url("img/fond.png");
+	margin:0 0 1em 0;
+}
+header {
+	background-color: #02b2b2;
+	border-top:2px solid teal ;
+	border-bottom:2px solid teal;
+	margin:0 auto 0 auto;
+
+}
+.navt{
+	text-align: center;
+}
+.nav {
+	text-align:center;
+}

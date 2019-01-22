@@ -1,0 +1,54 @@
+div {
+	text-align: center;
+	line-height: 300px;
+	width:300px;
+	margin:10em auto;
+	background-color:#b5f;
+
+/*********************************************
+**************TRANSFORM***********************/
+
+	/*transform: rotate(45deg) 
+				translatex(10em) 
+				translatey(5em)
+				scale(0.5)
+				skewx(15deg);*/
+}	
+
+/**********************************************
+*************TRANSITION***********************/
+
+
+/*.fab {
+	/*transition: background-color 2s;
+	transition:transform 0.5s;*/
+
+/*	transition: all/*quoi 1s/*durée ease-in/*fonction 1s/*delai*//*;
+/*}
+
+/*.fab:hover {
+	background-color: #fb6;
+	transform:rotate(90deg);
+
+}*/
+
+/***********************************************
+****************AIMATION***********************/
+
+
+
+@keyframes slide {
+	0% {
+		transform:translateX(-20em);
+	}
+	80% {
+		transform:translateX(2em);
+	}
+	100% {
+		transform:translateX(0);
+	}
+}
+
+.fab {
+	animation:slide 3s;
+}

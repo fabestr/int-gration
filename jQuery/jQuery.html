@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<a href="#" class="button">OK</a>
+	<div class='content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto earum expedita porro quo eum, a voluptatum quas neque perspiciatis corporis, eligendi aspernatur autem veritatis, culpa sed ipsum, fuga tempora placeat?</div>
+	
+
+
+
+
+
+
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+
+
+	<script>
+	$(function(){
+		$(".content").css("background-color","green");
+
+		$(".button").click(function(){
+			$(".content").css("background-color","red");
+			$('.content').html('Salut');
+			$('.content').toggle(3000);
+		})
+
+
+
+
+	});
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.gras {
+	font-weight:bold;
+}
+span {
+	color:grey;
+}
+.arial {
+	font-family: arial,sans-serif;
+}
+.rouge{
+	color:red;
+}
+.bleu{
+	color:blue;
+}
+.vert{
+	color:green;
+}
+.monospace{
+	font-family:monospace;
+}
+.fondrouge{
+	background-color: red
+}
+.fondbleu{
+	background-color:blue;
+}
+.fondvert{
+	background-color:green;
+}
