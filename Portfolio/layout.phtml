@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fabien Estrabaud</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+                <nav>
+                    <div class="menu">
+                        <div id='menu_hidde' class="hidden slide_menu_return">
+                            <ul class="menu_list">
+                                <li><a class='nav_link' href="">Accueil</a></li>
+                                <li><a class='nav_link' href="">Formation</a></li>
+                                <li><a class='nav_link' href="">Compétences</a></li>
+                                <li><a class='nav_link' href="">Projets</a></li>
+                                <li><a class='nav_link' href="">contact</a></li>
+                                <li><a class='nav_link' href="login.php">Se connecter</a></li>
+                                <li><a class='nav_link' href="">Se déconnecter</a></li>  
+                            </ul> 
+                        </div>
+                        <a class="menu_click" href=""><i class="fas fa-bars"></i></a>
+                    </div>
+                </nav>
+        </div>
+    </header>
+    <main>
+    <h1 class="title_main"><span class="name">Fabien</span> <span class="name">ESTRABAUD</span></h1>
+       <?php include 'www/'.$template.'.phtml' ?>
+    
+    </main>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+@font-face {
+    font-family:'Exo 2';
+    src:url('../fonts/Exo_2/Exo2-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src:url('../fonts/Comfortaa/Comfortaa-Regular.ttf');
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Exo 2', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Comfortaa', cursive;
+    background-image: url('../img/business-computer-desk-1036808.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+
+.container {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+
+@keyframes slide {
+	0% {
+		transform:translateX(100vw);
+	}
+
+	100% {
+		transform:translateX(0);
+	}
+}
+
+@keyframes slide_return {
+	0% {
+		transform:translateX(0);
+	}
+
+	100% {
+		transform:translateX(100vw);
+	}
+}
+
+
+.hidden {
+    display:none;
+    
+}
+
+.slide_menu {
+    animation: slide 1s;
+   
+}
+
+.slide_menu_return {
+    animation: slide_return 1s;
+}
+
+
+/*****************Header*************/
+
+header{
+    nav{
+        position:fixed;
+        top:1em;
+        right:1em;
+        z-index: 1000;
+        .menu {
+            display:flex;
+            align-items: center;
+            
+            line-height: 0.1em;
+            z-index: 1000;
+            #menu_hidde {
+                background-color: #232523;
+                border-radius: 2px;
+               
+            }
+            .menu_list{
+                display:flex;
+                justify-content: space-between;
+                padding-left: 0;
+                
+                li{
+                    list-style: none;
+                    .nav_link {
+                        padding:0 2em;
+                        color: #EBEBEB;
+                        transition:0.4s;
+                        border-radius: 2px;
+                    }
+                    .nav_link:hover {
+                        color:#232523;
+                        background-color: #EBEBEB;
+                        padding:0.5em 2em;
+                    }
+                   
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #EBEBEB;
+
+                .fas {
+                    padding:0.55em 1em;
+                }
+
+            }
+            
+            .menu_click {
+                transition:background-color 0.5s;
+                background-color: #232523;
+                border-radius: 2px;
+            }
+
+            .menu_click:hover {
+
+                background-color: #EBEBEB;
+                color: #232523;
+            }
+        }
+    }        
+}
+
+
+/**************MAIN*******************/
+
+main {
+
+    .title_main {
+        position: fixed;
+        top: 37%;
+        left:8%;
+        line-height: 125%;
+        font-size: 5vw;
+        .name {
+            display:block;
+        }
+    }
+    .about_title {
+        position: absolute;
+        top: 30vh;
+         left:55%;
+         width:40vw;
+         text-align: center; 
+         z-index: 100;
+
+
+        .title_little {
+            line-height:125%;  
+            font-size: 2.5em;
+        }
+    }
+    
+    .about{
+        position: absolute;
+        left: 50%;
+        top:100vh;
+        margin-right: 2em;
+        padding:1em 1.5em;
+        width:48%;
+        z-index: 100;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/*************************LOGIN****************************
+***********************************************************/
+
+.login_form {
+    position: absolute;
+    top: 30vh;
+    left:50%;
+    width:40vw;
+    text-align: center; 
+    z-index: 100;
+
+    li {
+        list-style: none;
+
+        label {
+            display:inline-block;
+            width: 200px;
+        }
+    }
+}
+

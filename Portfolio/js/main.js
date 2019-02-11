@@ -7,5 +7,10 @@ menuClick.addEventListener('click', onClickToggleMenu);
 
 function onClickToggleMenu(event) {
     event.preventDefault();
+    
+    menuHidde.classList.toggle('slide_menu');
+
+    menuHidde.classList.toggle('slide_menu_return');
+
     menuHidde.classList.toggle('hidden');
 }
