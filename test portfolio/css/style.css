@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  /*background-image: url("../img/business-computer-desk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -8,34 +8,6 @@
   src: url("../fonts/Comfortaa/Comfortaa-Regular.ttf");
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Exo 2', sans-serif;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Comfortaa', cursive;
-  background-image: url("../img/business-computer-desk-1036808.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-.container {
-  max-width: 100px;
-  margin: 0 auto;
-}
-
 @-webkit-keyframes slide {
   0% {
     -webkit-transform: translateX(100vw);
@@ -80,8 +52,86 @@ body {
   }
 }
 
+@-webkit-keyframes title_change {
+  0% {
+    -webkit-transform: skew(50);
+            transform: skew(50);
+  }
+  50% {
+    -webkit-transform: skew(25);
+            transform: skew(25);
+  }
+  100% {
+    -webkit-transform: skew(0);
+            transform: skew(0);
+  }
+}
+
+@keyframes title_change {
+  0% {
+    -webkit-transform: skew(50);
+            transform: skew(50);
+  }
+  50% {
+    -webkit-transform: skew(25);
+            transform: skew(25);
+  }
+  100% {
+    -webkit-transform: skew(0);
+            transform: skew(0);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo 2', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-image: url("../img/backgroundImage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/********************LOADING****************************/
+/*******************************************************/
+.loader {
+  position: fixed;
+  z-index: 9999;
+  background: url("../img/loading.gif") 50% 50% no-repeat;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: wait;
+}
+
+/******************ANIMATION*************************/
+/***************************************************/
 .hidden {
   display: none;
+}
+
+.anime_title {
+  -webkit-animation: title_change 0.4s;
+          animation: title_change 0.4s;
 }
 
 .slide_menu {
@@ -95,6 +145,7 @@ body {
 }
 
 /*****************Header*************/
+/**************************************/
 header nav {
   position: fixed;
   top: 1em;
@@ -168,6 +219,7 @@ header nav .menu .menu_click:hover {
 }
 
 /**************MAIN*******************/
+/*******************************************/
 main .title_main {
   position: fixed;
   top: 37%;
@@ -202,6 +254,13 @@ main .about {
   padding: 1em 1.5em;
   width: 48%;
   z-index: 100;
+}
+
+main .date {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: #909F35;
 }
 
 /*************************LOGIN****************************
