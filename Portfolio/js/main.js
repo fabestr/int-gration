@@ -1,6 +1,12 @@
 'use strict';
 
 
+
+
+/* $(function() {
+  // Ici le DOM est prêt
+}); */
+
 /* $(window).load(function(event) {
     event.preventDefault();
     $(".loader").fadeOut();
@@ -17,7 +23,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
 var menuHidde = document.getElementById('menu_hidde');
 var menuClick = document.querySelector('.menu_click');
 var position = "name";
+var titleName = $('.title_name');
+var titleCompetence = $('.title_competence');
+var titleFormation = $('.title_formation');
+var titleProject = $('.title_project');
 
+
+$(titleCompetence).hide();
+$(titleFormation).hide();
+$(titleProject).hide();
 
 menuClick.addEventListener('click', onClickToggleMenu);
 
@@ -35,23 +49,31 @@ function onClickToggleMenu(event) {
 }
 
 $(window).scroll(function(){
-    
+  
       console.log($(window).scrollTop() );
       if($(window).scrollTop() < 250 && position != "name") {
         
-        //$('.title_main').toggleClass('anime_title');
-        $('.title_main').html('<span class="name">Fabien</span><span class="name">Estrabaud</span>');
-        //$('.title_main').toggleClass('anime_title');
+       $(titleName).show('linear');
+       $(titleCompetence).hide();
+       $(titleFormation).hide('linear');
+       $(titleProject).hide();
+        /* $('.title_main').html('<span class="name">Fabien</span><span class="name">Estrabaud</span>');
+        //$('.title_main').toggleClass('anime_title');*/
        position = "name";
     
     }
-      if($(window).scrollTop() > 250 && position != "formation") {
+      if($(window).scrollTop() > 250 && $(window).scrollTop() < 350 && position != "formation") {
         console.log('formation');
-            //$('.title_main').toggleClass('anime_title');
-            $('.title_main').html('<span class="name">Formation</span>');
-            $('.title_main').toggleClass('anime_title');
+
+           $(titleName).hide('linear');
+           $(titleFormation).show( 'linear');
+           $(titleCompetence).hide();
+           $(titleProject).hide();
+
+           /* $('.title_main').html('<span class="name">Formation</span>');
+            $('.title_main').toggleClass('anime_title');*/
             position = "formation";
-      }
+      } 
     
   });
 

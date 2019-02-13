@@ -52,36 +52,18 @@
   }
 }
 
-@-webkit-keyframes title_change {
-  0% {
-    -webkit-transform: skew(50);
-            transform: skew(50);
-  }
-  50% {
-    -webkit-transform: skew(25);
-            transform: skew(25);
-  }
-  100% {
-    -webkit-transform: skew(0);
-            transform: skew(0);
-  }
-}
+/* @keyframes title_change {
 
-@keyframes title_change {
-  0% {
-    -webkit-transform: skew(50);
-            transform: skew(50);
-  }
-  50% {
-    -webkit-transform: skew(25);
-            transform: skew(25);
-  }
-  100% {
-    -webkit-transform: skew(0);
-            transform: skew(0);
-  }
-}
-
+    0%{
+        transform: skew(50);
+    }
+    50%{
+        transform: skew(25);
+    }
+    100%{
+        transform: skew(0);
+    }
+} */
 h1,
 h2,
 h3,
@@ -97,12 +79,13 @@ h6 {
 }
 
 .container {
-  max-width: 100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 body {
   font-family: 'Comfortaa', cursive;
+  line-height: 1.5em;
   background-image: url("../img/backgroundImage.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,28 +95,27 @@ body {
 
 /********************LOADING****************************/
 /*******************************************************/
+/* 
 .loader {
-  position: fixed;
-  z-index: 9999;
-  background: url("../img/loading.gif") 50% 50% no-repeat;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  cursor: wait;
-}
-
+    position : fixed;
+    z-index: 9999;
+    background : url('../img/loading.gif') 50% 50% no-repeat;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+} */
 /******************ANIMATION*************************/
 /***************************************************/
 .hidden {
   display: none;
 }
 
-.anime_title {
-  -webkit-animation: title_change 0.4s;
-          animation: title_change 0.4s;
-}
+/* .anime_title {
+    animation: title_change 0.4s;
 
+} */
 .slide_menu {
   -webkit-animation: slide 1s;
           animation: slide 1s;
@@ -234,7 +216,7 @@ main .title_main .name {
 
 main .about_title {
   position: absolute;
-  top: 30vh;
+  top: 40vh;
   left: 55%;
   width: 40vw;
   text-align: center;
@@ -247,13 +229,26 @@ main .about_title .title_little {
 }
 
 main .about {
-  position: absolute;
-  left: 50%;
-  top: 100vh;
+  position: static;
+  right: 0;
+  margin-left: 50%;
+  margin-top: 100%;
   margin-right: 2em;
+  margin-bottom: 3em;
   padding: 1em 1.5em;
-  width: 48%;
+  width: 48vw;
   z-index: 100;
+}
+
+main .about article {
+  width: 100%;
+  text-align: center;
+}
+
+main .about_formation {
+  margin-top: 3em;
+  margin-left: 50%;
+  margin-right: 2em;
 }
 
 main .date {
