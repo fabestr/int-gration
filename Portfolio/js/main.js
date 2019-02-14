@@ -20,18 +20,28 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.getElementsByClassName('loader')[0].style.display = 'none';
   }); */
 
+
+
+
+
 var menuHidde = document.getElementById('menu_hidde');
 var menuClick = document.querySelector('.menu_click');
 var position = "name";
 var titleName = $('.title_name');
-var titleCompetence = $('.title_competence');
+var titleAboutMe = $('.title_about_me');
 var titleFormation = $('.title_formation');
-var titleProject = $('.title_project');
 
 
-$(titleCompetence).hide();
+
+
+$(titleAboutMe).hide();
 $(titleFormation).hide();
-$(titleProject).hide();
+
+
+/********************NAV-MENU*****************************
+ * ******************************************************/
+
+
 
 menuClick.addEventListener('click', onClickToggleMenu);
 
@@ -48,32 +58,54 @@ function onClickToggleMenu(event) {
 
 }
 
+
+
+
+
+/*********************TITLE SCROLL**************************
+ * ********************************************************/
+
+
 $(window).scroll(function(){
   
       console.log($(window).scrollTop() );
       if($(window).scrollTop() < 250 && position != "name") {
         
-       $(titleName).show('linear');
-       $(titleCompetence).hide();
-       $(titleFormation).hide('linear');
-       $(titleProject).hide();
+       $(titleName).show('fast','linear');
+       $(titleAboutMe).hide();
         /* $('.title_main').html('<span class="name">Fabien</span><span class="name">Estrabaud</span>');
         //$('.title_main').toggleClass('anime_title');*/
        position = "name";
     
     }
-      if($(window).scrollTop() > 250 && $(window).scrollTop() < 350 && position != "formation") {
-        console.log('formation');
+        if($(window).scrollTop() > 250 && $(window).scrollTop() < 1000 && position != "a propos") {
+        console.log('a propos');
 
-           $(titleName).hide('linear');
-           $(titleFormation).show( 'linear');
-           $(titleCompetence).hide();
-           $(titleProject).hide();
+            $(titleName).hide('fast','linear');
+            $(titleAboutMe).show( 'fast','linear');
+            $(titleFormation).hide();
 
            /* $('.title_main').html('<span class="name">Formation</span>');
             $('.title_main').toggleClass('anime_title');*/
-            position = "formation";
-      } 
+            position = "a propos";
+        } 
+
+        if($(window).scrollTop() > 1000 && $(window).scrollTop() < 2000 && position != "formation") {
+
+            $(titleName).hide();
+            $(titleAboutMe).hide('slow','linear');
+        
+            setTimeout(function() {
+                $('.title_main').css('display', 'none');
+                $(titleFormation).show('swing');
+            }, 300);
+            
+
+           position = "formation";
+        }
+
+        
+
     
   });
 
