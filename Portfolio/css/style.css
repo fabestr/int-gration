@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Exo 2';
   src: url("../fonts/Exo_2/Exo2-Black.ttf");
@@ -90,6 +91,12 @@ body {
 
 /*********************BACKGROUND*************************/
 /*******************************************************/
+.filter {
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .background {
   background-image: url("../img/backgroundImage.jpeg");
   background-size: cover;
@@ -99,13 +106,6 @@ body {
   margin-bottom: 0;
 }
 
-/* .background::after {
-    content:"";
-    position:absolute;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(whitesmoke , transparent, rgba(255,255,255,1));
-} */
 .background_formation {
   background-image: url("../img/aPropos.png");
   background-size: cover;
@@ -119,19 +119,19 @@ body {
   margin-top: 0;
 }
 
-.filter {
-  width: 100%;
-  height: auto;
-  background: rgba(255, 255, 255, 0.5);
+.background_compétence {
+  background-image: url("../img/aPropos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 1px 13px 7px darkgrey;
+          box-shadow: 0px 1px 13px 7px darkgrey;
+  min-height: 100vh;
+  margin-top: 0;
 }
 
-/* .background_formation::before {
-    content:"";
-    position:absolute;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(whitesmoke , transparent , rgba(255,255,255,1));
-} */
 /********************LOADING****************************/
 /*******************************************************/
 /* 
@@ -243,6 +243,7 @@ header nav .menu .menu_click:hover {
 /*******************************************/
 main {
   /******************ABOUT ME******************/
+  /*************************FORMATION***********************/
 }
 
 main .title_main {
@@ -289,9 +290,7 @@ main .about article {
 }
 
 main .about_formation {
-  margin-top: 0;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin: 0 auto;
 }
 
 main .about_formation .title_formation {
@@ -317,17 +316,6 @@ main .about_formation .item .image > div {
   position: relative;
   text-align: center;
   font-size: 0.8em;
-}
-
-main .about_formation .item .image > div::after {
-  content: '';
-  width: 100%;
-  height: 0;
-  border-bottom: 1px solid #232b50;
-  position: absolute;
-  top: 2.75em;
-  left: 2.5em;
-  z-index: -1;
 }
 
 main .about_formation .item .image img {
@@ -369,17 +357,6 @@ main .about_formation .item .details > div p {
   margin: 0;
   padding: 0;
   line-height: 150%;
-}
-
-main .about_formation .item .details::before {
-  content: '';
-  width: 0;
-  height: 100%;
-  border-left: 1px solid #232b50;
-  position: absolute;
-  top: 0;
-  left: -4.35em;
-  z-index: -1;
 }
 
 /*************************LOGIN****************************

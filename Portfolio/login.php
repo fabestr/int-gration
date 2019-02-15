@@ -1,12 +1,11 @@
 <?php
 session_start();
 
+include 'application/bdd_connection.php';
+
 if(empty($_POST)==false) {
     //var_dump($_POST);
 
-    $pdo = new PDO('mysql:host=localhost;dbname=portfolio', 'root', 'troiswa');
-
-	$pdo->exec('SET NAMES UTF8');
     
     $query = $pdo->prepare
 	(
