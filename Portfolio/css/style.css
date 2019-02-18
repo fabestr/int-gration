@@ -107,7 +107,7 @@ body {
 }
 
 .background_formation {
-  background-image: url("../img/aPropos.png");
+  background: url("../img/aPropos.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -165,8 +165,9 @@ body {
           animation: slide_return 1s;
 }
 
-/*****************Header*************/
-/**************************************/
+/****************************************/
+/*****************Header***************/
+/******************************************/
 header nav {
   position: fixed;
   top: 1em;
@@ -239,11 +240,16 @@ header nav .menu .menu_click:hover {
   color: #232523;
 }
 
-/**************MAIN*******************/
 /*******************************************/
+/**************MAIN***********************/
+/********************************************/
 main {
-  /******************ABOUT ME******************/
-  /*************************FORMATION***********************/
+  /******************ABOUT ME**************************
+****************************************************/
+  /*************************FORMATION***********************
+**********************************************************/
+  /**************COMPETENCES********************************
+**********************************************************/
 }
 
 main .title_main {
@@ -305,7 +311,7 @@ main .about_formation .item {
   display: -ms-flexbox;
   display: flex;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 main .about_formation .item .image {
@@ -316,6 +322,10 @@ main .about_formation .item .image > div {
   position: relative;
   text-align: center;
   font-size: 0.8em;
+}
+
+main .about_formation .item .image .pixel {
+  margin-right: 7px;
 }
 
 main .about_formation .item .image img {
@@ -348,6 +358,14 @@ main .about_formation .item .details > div {
 main .about_formation .item .details > div h2 {
   color: #72862F;
   font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+
+main .about_formation .item .details > div h3 {
+  color: #72862F;
+  font-size: 1em;
   margin: 0;
   padding: 0 0 0.5em 0;
   letter-spacing: 0.1em;

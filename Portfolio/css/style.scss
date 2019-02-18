@@ -93,7 +93,7 @@ body{
 
 
 .background_formation {
-    background-image: url('../img/aPropos.png');
+    background:url('../img/aPropos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -159,8 +159,9 @@ body{
 }
 
 
-/*****************Header*************/
-/**************************************/
+/****************************************/
+/*****************Header***************/
+/******************************************/
 header{
     nav{
         position:fixed;
@@ -195,8 +196,9 @@ header{
                         color:#232523;
                         background-color: #EBEBEB;
                         padding:0.5em 2em;
+                        
                     }
-                   
+                
                 }
             }
             a{
@@ -225,8 +227,9 @@ header{
 }
 
 
-/**************MAIN*******************/
 /*******************************************/
+/**************MAIN***********************/
+/********************************************/
 main {
 
     .title_main {
@@ -240,7 +243,8 @@ main {
         }
     }
 
-/******************ABOUT ME******************/
+/******************ABOUT ME**************************
+****************************************************/
 
     .about_title {
         position: static;
@@ -275,7 +279,8 @@ main {
 
     }
 
-/*************************FORMATION***********************/
+/*************************FORMATION***********************
+**********************************************************/
 
     .about_formation {
         margin :0 auto;
@@ -290,10 +295,11 @@ main {
           .item {
             display: flex;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 1em auto;
             
             .image {
               padding: 1em 2em;
+             
               
               > div {
                 position: relative;
@@ -301,6 +307,10 @@ main {
                 font-size: 0.8em;
           
                 
+              }
+
+              .pixel {
+                    margin-right: 7px;
               }
               
               img {
@@ -322,15 +332,24 @@ main {
             .details {
               position: relative;
               flex-grow: 1;
+              //background-color:#e6e6e8 ;
           
               > div {
-                background:rgba(255,255,255,0.8);
-                padding: 1.5em;
-                margin: 1em 0;
+                    
+                    background:rgba(255,255,255,0.8);
+                    padding: 1.5em;
+                    margin: 1em 0;
                 
                 h2 {
                   color: #72862F;
                   font-size: 1.4em;
+                  margin: 0;
+                  padding: 0 0 0.5em 0;
+                  letter-spacing: 0.1em;
+                }
+                h3 {
+                    color: #72862F;
+                  font-size: 1em;
                   margin: 0;
                   padding: 0 0 0.5em 0;
                   letter-spacing: 0.1em;
@@ -350,6 +369,8 @@ main {
         
     }
 
+/**************COMPETENCES********************************
+**********************************************************/
     
 
 }
