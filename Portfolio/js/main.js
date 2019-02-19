@@ -90,7 +90,7 @@ $(window).scroll(function(){
             position = "a propos";
         } 
 
-        if($(window).scrollTop() > 1000 && $(window).scrollTop() < 2000 && position != "formation") {
+        if($(window).scrollTop() > 1000  && position != "formation") {
 
             $(titleName).hide();
             $(titleAboutMe).hide('slow','linear');

@@ -75,14 +75,15 @@ body{
 .filter {
 
     width:100%;
-    height:auto;
+    min-height:100vh;
     background: rgba(255,255,255,0.5);
 
 }
 
 
 .background {
-    background-image: url('../img/backgroundImage.jpeg');
+    background-image: url('../img/background/backgroundImage.jpeg');
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -93,7 +94,7 @@ body{
 
 
 .background_formation {
-    background:url('../img/aPropos.png');
+    background:url('../img/background/aPropos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -102,13 +103,14 @@ body{
     box-shadow: 0px 1px 13px 7px darkgrey;
     min-height: 100vh;
     margin-top:0;
+    padding-top: 1em;
 
 } 
 
 
 
 .background_compétence {
-    background-image: url('../img/aPropos.png');
+    background-image: url('../img/background/aPropos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -117,6 +119,10 @@ body{
     box-shadow: 0px 1px 13px 7px darkgrey;
     min-height: 100vh;
     margin-top:0;
+
+    .container {
+        padding-top: 5em;
+    }   
 }
 
 /********************LOADING****************************/
@@ -372,6 +378,32 @@ main {
 /**************COMPETENCES********************************
 **********************************************************/
     
+    .competence {
+        
+        h1 {
+            margin-bottom: 1em;
+        }
+        .web_logo_container {
+
+            border-top: solid 2px darkgray;
+            ul {
+                margin: 1em auto;
+                display:flex;
+                flex-wrap: wrap;
+
+                li {
+
+                    list-style: none;
+                    width: 33%;
+                    margin-bottom: 2em;
+
+                    img {
+                        height:5em;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -402,4 +434,5 @@ main {
         }
     }
 }
+
 

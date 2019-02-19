@@ -5,7 +5,7 @@ var_dump($_POST);
 
 include 'application/bdd_connection.php';
 
-if(empty($_FILES['photo_project']['name']==false)) {
+if(empty($_FILES)==false) {
     $tailleMax = 2097152; // taille max du fichier
 
     $extensionAccepted = array('jpg','jpeg','png','gif');//type de photo accepter
@@ -35,6 +35,10 @@ if(empty($_FILES['photo_project']['name']==false)) {
 
                         $query->execute([$_POST['title_project'], $_POST['url_project'],$_POST['title_project'].".".$extensionUpload]); 
 
+                        header('Location:index.php');
+                        exit();
+                        
+
             }else {
                 echo 'Problème au téléchargement!';
             }
@@ -48,11 +52,7 @@ if(empty($_FILES['photo_project']['name']==false)) {
     }
 
 
-} else {
-    header('Location:index.php');
-    exit;
-}
-
+} 
 
 
 $template = 'add_project';
